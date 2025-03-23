@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 1</title>
+    <link rel="stylesheet" href="./css/main.css">
+    
+</head>
+<body>
+
+    <h1 class="head-title">TechStore</h1>
+
+    <div class="panier">
+        <h2 class="title-shop" id="title-shop">Votre Panier</h2>
+        <h3 class="counter" id="counter">0</h3>
+        <button id="reset" >Reset</button>
+
+    </div>
+    <div class="alert alert-success" id="success-alert" style="display: none;">
+        <strong>Success!</strong> Produit ajouté avec succès !
+    </div>
+    <div class="alert alert-cancel" id="cancel-alert" style="display: none;">
+        <strong>Annulation !</strong> Produit annulé avec succès !
+    </div>
+    
+    <div class="card-container">
+        <div id="c1" class="card">
+            <h2 class="card-title">Product 1</h2>
+            <img class="img" src="./img/img1.jpg" alt="Image du produit">
+            <div class="description">
+                Lorem ipsum dolor sit amet consectetur...
+            </div>
+            <label >Quantité :</label>
+            <input type="number" class="quantity" min="1" max="10" value="1">
+            <button class="btn">Ajouter</button>
+            <button class="cancel">Annuler</button>
+        </div>
+    
+        <div id="c2" class="card">
+            <h2 class="card-title">Product 2</h2>
+            <img class="img" src="./img/img1.jpg" alt="Image du produit">
+            <div class="description">
+                Lorem ipsum dolor sit amet consectetur...
+            </div>
+            <label>Quantité :</label>
+            <input type="number" class="quantity" min="1" max="10" value="1">
+            <button class="btn">Ajouter</button>
+            <button class="cancel">Annuler</button>
+        </div>
+
+        <div id="c3" class="card">
+            <h2 class="card-title">Product 3</h2>
+            <img class="img" src="./img/img1.jpg" alt="Image du produit">
+            <div class="description">
+                Lorem ipsum dolor sit amet consectetur...
+            </div>
+            <label>Quantité :</label>
+            <input type="number" class="quantity" min="1" max="10" value="1">
+            <button class="btn">Ajouter</button>
+            <button class="cancel">Annuler</button>
+        </div>
+
+        <div id="c4" class="card">
+            <h2 class="card-title">Product 4</h2>
+            <img class="img" src="./img/img1.jpg" alt="Image du produit">
+            <div class="description">
+                Lorem ipsum dolor sit amet consectetur...
+            </div>
+            <label>Quantité :</label>
+            <input type="number" class="quantity" min="1" max="10" value="1">
+            <button class="btn">Ajouter</button>
+            <button class="cancel">Annuler</button>
+        </div>
+    </div>
+
+    <script src="./js/main.js" defer></script>
+</body>
+</html>
