@@ -2,6 +2,7 @@
 let counter = document.getElementById("counter");
 let successAlert = document.getElementById("success-alert");
 let cancelAlert = document.getElementById("cancel-alert");
+let resetAlert = document.getElementById("reset-alert");
 let btnReset = document.getElementById("reset");
 
 
@@ -10,7 +11,7 @@ function showAlert(alertElement) {
     alertElement.style.display = "block"; 
     setTimeout(() => {
         alertElement.style.display = "none"; 
-    }, 3000);
+    }, 500);
 }
 
 
@@ -33,6 +34,7 @@ function cancelProduct() {
 
 let resetPanier = () => {
     counter.innerText = "0"; 
+    showAlert(resetAlert);
 };
 
 

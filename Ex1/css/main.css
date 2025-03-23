@@ -104,3 +104,26 @@ h3{
     background-color: #fff3cd;
     border-color: #ffeeba;
 }
+.alert-reset {
+    color: rgb(253, 34, 70);
+    background-color: pink; 
+    border-color: #fc5470;
+}
+nav {
+    position: block; /* Changed from 'display: fixed' which isn't valid CSS */
+    top: 0; /* Makes it stick to the top of the viewport */
+    width: 98%; /* Makes it stretch across the entire width */
+    height: 60px; /* Fixed height in pixels rather than percentage */
+    background-color: rgb(81, 176, 254);
+    padding: 10px;
+    z-index: 1000; /* Ensures it stays on top of other content */
+    display: flex; /* Enables flexbox for better alignment */
+    align-items: center; /* Centers items vertically */
+    justify-content: space-between; /* Spreads items across the nav */
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif; /* Adding a default font */
+} 
